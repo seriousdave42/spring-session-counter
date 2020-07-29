@@ -29,4 +29,10 @@ public class HomeController {
 		session.setAttribute("count", count);
 		return "counter.jsp";
 	}
+	
+	@RequestMapping("/reset")
+	public String reset(HttpSession session) {
+		session.setAttribute("count", 0);
+		return "counter.jsp";
+	}
 }

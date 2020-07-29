@@ -16,5 +16,8 @@
 	<div>
 		<h2>Welcome, User!</h2>
 	</div>
+	<div>
+		<h2><a href="/counter">Check counter</a> <a href="/reset">Reset counter</a></h2>
+	</div>
 </body>
 </html>

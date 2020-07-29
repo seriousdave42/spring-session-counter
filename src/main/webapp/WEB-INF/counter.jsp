@@ -13,6 +13,6 @@
 </head>
 <body>
 	<h2>You have visited <a href="/">localhost:8080</a> <c:out value="${sessionScope.count}"/> times.</h2>
-	<h2><a href="/">Test another visit?</a></h2>
+	<h2><a href="/">Test another visit?</a> <a href="/reset">Reset counter</a></h2>
 </body>
 </html>
