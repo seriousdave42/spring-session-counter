@@ -35,4 +35,17 @@ public class HomeController {
 		session.setAttribute("count", 0);
 		return "counter.jsp";
 	}
+	
+	@RequestMapping("/increment")
+	public String increment(HttpSession session) {
+		Integer count = (Integer) session.getAttribute("count");
+		if (count == null) {
+			count = 2;
+		}
+		else {
+			count += 2;
+		}
+		session.setAttribute("count", count);
+		return "counter.jsp";
+	}
 }
